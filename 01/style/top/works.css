@@ -1,0 +1,39 @@
+/* イベント/案件/実績 */
+.works_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.works_image img {
+  display: block;
+  width: 100%;
+  transition: .2s;
+}
+
+.works_image img:hover {
+  transform: scale(1.1);
+}
+
+.works_text {
+  margin: 8px 0;
+}
+
+.works_button {
+  width: 100%;
+  text-align: end;
+}
+
+.works_button a {
+  padding: 0 12px 2px;
+  color: #6ec300;
+  transition: .2s;
+}
+
+.works_button a:hover {
+  background: #6ec300;
+  color: white;
+}

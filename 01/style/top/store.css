@@ -1,0 +1,118 @@
+/* 施設紹介 */
+.content_item.store {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  overflow-y: hidden;
+  transition: .2s;
+}
+
+.content_item.store.partial {
+  height: 320px;
+  padding-bottom: 0;
+}
+
+.content_item.store p {
+  margin: 16px 0;
+}
+
+.store_list_wrapper li {
+  list-style: none;
+}
+
+.store_list_wrapper li:not(:first-child) {
+  margin-top: 12px;
+}
+
+/* ユニット（縮小時） */
+.store_item.small {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border: solid 2px gray;
+  border-radius: 6px;
+  gap: 12px;
+}
+
+/* ユニット（縮小時） 画像 */
+
+.store_item.small .store_item_image img {
+  display: block;
+  max-height: 160px;
+}
+
+/* ユニット（縮小時） テキスト */
+.store_item.small .store_item_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+
+.store_item.small .store_item_text p {
+  margin: 4px 0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.store_item.small .store_item_text dl {
+  display: grid;
+  width: 100%;
+  margin: 8px 0;
+  gap: 4px 0;
+  grid-template-columns: 1fr 3fr;
+  color: #515151;
+}
+
+.store_item.small .store_item_text span {
+  padding: 0 8px 2px;
+  border-radius: 4px;
+  background: var(--c-primal);
+  color: white;
+  font-size: .9em;
+}
+
+.store_item.small .store_item_text span:not(:first-child) {
+  margin-left: 4px;
+}
+
+/* ユニット（縮小時） ボタン */
+.store_item.small .store_item_button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+}
+
+.store_item.small .store_item_button a {
+  border: none;
+  background: transparent;
+  color: blue;
+  font-size: 1.0em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* もっと見るボタン */
+.store_more_button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(180deg, transparent, white);
+}
+
+.store_more_button button {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 1.0em;
+  text-shadow: 0 0 4px white;
+  cursor: pointer;
+}

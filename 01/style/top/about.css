@@ -1,0 +1,11 @@
+/* 会社概要 */
+.content_item.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.content_item.about span {
+  font-size: 1.25em;
+}

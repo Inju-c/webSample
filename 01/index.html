@@ -2,13 +2,27 @@
 <html>
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>title</title>
   <link rel="stylesheet" href="./style/common.css">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 <body>
+
   <!-- ヘッダー（スクロール時のみ表示） -->
+  <div class="scroll_header hide">
+    <h1 class="scroll_header_name"><a href="#content_top">Company's name</a></h1>
+    <ul class="scroll_header_links">
+      <li><a href="#">LINK_1</a></li>
+      <li><a href="#">LINK_2</a></li>
+      <li><a href="#">LINK_3</a></li>
+      <li><a href="#">LINK_4</a></li>
+      <li><a href="#">LINK_5</a></li>
+      <li><a href="#">LINK_6</a></li>
+    </ul>
+  </div>
+
   <!-- ヘッダー（先頭時のみ表示） -->
   <header id="content_top" class="content_header top">
     <div class="header_content_wrapper">
@@ -16,7 +30,7 @@
       <div class="navigation_content top">
         <nav>
           <!-- 企業名 -->
-          <h1 class="header_name"><a href="#content_top">Company's name</a></h1>
+          <h1 class="header_name">Company's name</h1>
           <!-- クイックアクセス -->
           <ul class="header_quick_links">
             <li><a href="#">LINK_1</a></li>
@@ -381,7 +395,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
   <!-- フッター -->
@@ -417,37 +430,18 @@
 
 <script src="./script/common.js"></script>
 <script>
-  // 施設の表示切替え
-  $('#store_view_more').on('click', () => {
-    // 「partial」クラスの有無を確認
-    if ($('.content_item.store').hasClass('partial')) {
-      // 「partial」クラスを除去
-      $('.content_item.store').toggleClass('partial');
-      // ボタンの文言を変更
-      $('#store_view_more').text('一部を見る');
+  // ヘッダーの表示非表示を切り替え
+  $(window).on('scroll', function() {
+    // 画面幅が1200px以上の時だけ有効
+    if ($(window).width() > 1200) {
+      if ($(window).scrollTop() > 800) {
+        $('.scroll_header').removeClass('hide');
+      } else {
+        $('.scroll_header').addClass('hide');
+      }
     } else {
-      // 「partial」クラスを追加
-      $('.content_item.store').toggleClass('partial');
-      // ボタンの文言を変更
-      $('#store_view_more').text('もっと見る');
+      $('.scroll_header').removeClass('hide');
     }
   });
-
-  $('.support_image_wrapper').hover(
-    function () {
-      console.log(1);
-      // ホバー時のクラスを追加
-      $('.support_image_hover').toggleClass('hov');
-      $('.hover_text').toggleClass('hov');
-      $('.support_image').toggleClass('hov');
-    },
-    function () {
-      console.log(0);
-      // ホバー時のクラスを削除
-      $('.support_image_hover').toggleClass('hov');
-      $('.hover_text').toggleClass('hov');
-      $('.support_image').toggleClass('hov');
-    }
-  );
 </script>
 </html>

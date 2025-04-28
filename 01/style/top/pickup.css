@@ -1,0 +1,25 @@
+/* Pick up */
+.content_item.pickup {
+  width: 95%;
+  margin: 12px auto;
+}
+
+.pickup_item {
+  width: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.pickup_item:not(:first-child) {
+  margin-top: 12px;
+}
+
+.pickup_item img {
+  width: 100%;
+  display: block;
+  transition: 0.2s;
+}
+
+.pickup_item img:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,26 @@
+/* 新着情報 */
+.content_item.news {
+  width: 70%;
+  margin: 4px auto;
+  padding: 8px 12px 8px 24px;
+  border: solid 2px gray;
+  border-radius: 4px;
+}
+
+.content_item.news dl {
+  height: 180px;
+  overflow-y: scroll;
+}
+
+.news_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.news_item:not(:first-child) {
+  margin-top: 4px;
+}

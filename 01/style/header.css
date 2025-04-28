@@ -1,0 +1,208 @@
+/* ヘッダー（スクロール時のみ表示） */
+.scroll_header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transform: translateZ(0%);
+  width: 100%;
+  background: var(--c-primal);
+  pointer-events: all;
+  transition: .2s;
+}
+
+.scroll_header.hide {
+  opacity: 0;
+  transform: translateZ(100%);
+  pointer-events: none;
+  transform-origin: top;
+}
+
+.scroll_header_name {
+  font-size: 2.5em;
+}
+
+.scroll_header_name a {
+  color: white;
+}
+
+.scroll_header_links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.scroll_header_links li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.scroll_header_links a {
+  color: white;
+}
+
+.scroll_header_links a::after {
+  display: inline-block;
+  opacity: 0;
+  transform: scaleX(.5);
+  width: 24px;
+  height: 24px;
+  margin: 0 12px 0 8px;
+  background-image: url(../image/icon_ui_arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  transition: .2s;
+  transform-origin: left;
+
+  background-position-y: bottom;
+}
+
+.scroll_header_links a:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* ヘッダー（先頭時のみ表示） */
+.content_header.top {
+  position: relative;
+  width: 100%;
+}
+
+.header_content_wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1.5fr 8.5fr;
+}
+
+/* ナビゲーション */
+.navigation_content.top {
+  width: auto;
+  padding: 8px 12px;
+  background: var(--c-primal);
+}
+
+.navigation_content.top nav {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  gap: 24px;
+  grid-template-rows: auto;
+}
+
+/* 企業名 */
+.header_name {
+  width: 100%;
+  color: white;
+  font-size: 2.5em;
+}
+
+/* クイックアクセス */
+.header_quick_links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 12px;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.header_quick_links li {
+  list-style: none;
+}
+
+.header_quick_links a {
+  color: white;
+}
+
+.header_quick_links a::after {
+  display: inline-block;
+  opacity: 0;
+  transform: scaleX(.5);
+  width: 32px;
+  height: 24px;
+  margin: 0 18px;
+  background-image: url(../image/icon_ui_arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  transition: .2s;
+  transform-origin: left;
+
+  background-position-y: bottom;
+}
+
+.header_quick_links a:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* SNS */
+.header_sns_links {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+  gap: 4px;
+}
+
+.header_sns_links span {
+  color: white;
+}
+
+.header_sns_links ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header_sns_links li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  list-style: none;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  border-radius: 50%;
+  background: white;
+  transition: .2s;
+}
+
+.header_sns_links li:hover {
+  transform: scale(.95);
+}
+
+.header_sns_links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_sns_links img {
+  width: 90%;
+}
+
+/* ヘッダー画像 */
+.image_content.top {
+  width: 100%;
+}
+
+.header_bg_img {
+  display: block;
+  width: 100%;
+  min-width: 960px;
+}

@@ -1,0 +1,41 @@
+/* フッター */
+footer {
+  display: flex;
+  width: 100%;
+  min-height: 120px;
+  background: rgb(53, 41, 37);
+  color: white;
+}
+
+.footer_content_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 24px auto;
+}
+
+.footer_content {
+  display: grid;
+  align-items: end;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer_logo img {
+  display: block;
+  width: 100%;
+}
+
+.footer_links li {
+  list-style: none;
+}
+
+.footer_links a {
+  color: white;
+}
+
+.footer_company {
+  text-align: center;
+
+  grid-column: 1 / 4;
+}
