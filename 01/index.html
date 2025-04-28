@@ -4,9 +4,433 @@
   <meta charset="UTF-8" />
   <title>title</title>
   <link rel="stylesheet" href="./style/common.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 <body>
+  <!-- ヘッダー（スクロール時のみ表示） -->
+  <!-- ヘッダー（先頭時のみ表示） -->
+  <header id="content_top" class="content_header top">
+    <div class="header_content_wrapper">
+      <!-- ナビゲーション -->
+      <div class="navigation_content top">
+        <nav>
+          <!-- 企業名 -->
+          <h1 class="header_name"><a href="#content_top">Company's name</a></h1>
+          <!-- クイックアクセス -->
+          <ul class="header_quick_links">
+            <li><a href="#">LINK_1</a></li>
+            <li><a href="#">LINK_2</a></li>
+            <li><a href="#">LINK_3</a></li>
+            <li><a href="#">LINK_4</a></li>
+            <li><a href="#">LINK_5</a></li>
+            <li><a href="#">LINK_6</a></li>
+          </ul>
+          <!-- SNS -->
+          <div class="header_sns_links">
+            <span>Official SNS</span>
+            <ul>
+              <li><a href="#"><img src="./image/icon_sns_yt.png"></a></li>
+              <li><a href="#"><img src="./image/icon_sns_tw.png"></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- ヘッダー画像 -->
+      <div class="image_content top">
+        <img class="header_bg_img" src="https://placehold.co/1632x950" alt="" />
+      </div>
+    </div>
+  </header>
 
+  <!-- メインコンテンツ -->
+  <div class="content_main">
+    <!-- 会社概要 -->
+    <div class="content">
+      <div class="content_inner">
+        <div class="content_title">
+          <h2>About us</h2>
+          <span class="h2_sub">株式会社〇〇とは</span>
+        </div>
+        <div class="content_item about">
+          <span>企業理念やキャッチコピー</span>
+          自社がどんなサービスを提供しているか、どんな理念で活動しているかなど。<br>
+          ２～３行（120字）程度で書かれるのが一般的。
+        </div>
+      </div>
+    </div>
+    <!-- 施設紹介 -->
+    <div class="content">
+      <div class="content_inner">
+        <div class="content_title">
+          <h2>Store</h2>
+          <span class="h2_sub">施設情報</span>
+        </div>
+        <div class="content_item store partial">
+          <p>
+            自社が保有している店舗、施設、設備 等の概要に触れる。<br>
+            傾向、共通の強みなど。
+          </p>
+          <div class="store_list_wrapper">
+            <ul>
+              <!-- ユニット -->
+              <li>
+                <div class="store_item small">
+                  <div class="store_item_image">
+                    <img src="https://placehold.co/320x180" alt="">
+                  </div>
+                  <div class="store_item_text">
+                    <p>施設名</p>
+                    <dl>
+                      <dt>所在地</dt>
+                      <dd>〇〇県〇〇市○○区〇〇 △丁目△-△ □□ビル△階</dd>
+                      <dt>主な用途</dt>
+                      <dd>イベント</dd>
+                      <dt>機材/設備</dt>
+                      <dd>
+                        <span>3Dトラッキング</span>
+                        <span>物販ブース</span>
+                        <span>80人収容</span>
+                      </dd>
+                    </dl>
+                    <div class="store_item_button">
+                      <a href="#">詳細を見る</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- ユニット -->
+              <li>
+                <div class="store_item small">
+                  <div class="store_item_image">
+                    <img src="https://placehold.co/320x180" alt="">
+                  </div>
+                  <div class="store_item_text">
+                    <p>施設名</p>
+                    <dl>
+                      <dt>所在地</dt>
+                      <dd>〇〇県〇〇市○○区〇〇 △丁目△-△ □□ビル△階</dd>
+                      <dt>主な用途</dt>
+                      <dd>イベント</dd>
+                      <dt>機材/設備</dt>
+                      <dd>
+                        <span>3Dトラッキング</span>
+                        <span>物販ブース</span>
+                        <span>80人収容</span>
+                      </dd>
+                    </dl>
+                    <div class="store_item_button">
+                      <a href="#">詳細を見る</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- ユニット -->
+              <li>
+                <div class="store_item small">
+                  <div class="store_item_image">
+                    <img src="https://placehold.co/320x180" alt="">
+                  </div>
+                  <div class="store_item_text">
+                    <p>施設名</p>
+                    <dl>
+                      <dt>所在地</dt>
+                      <dd>〇〇県〇〇市○○区〇〇 △丁目△-△ □□ビル△階</dd>
+                      <dt>主な用途</dt>
+                      <dd>イベント</dd>
+                      <dt>機材/設備</dt>
+                      <dd>
+                        <span>3Dトラッキング</span>
+                        <span>物販ブース</span>
+                        <span>80人収容</span>
+                      </dd>
+                    </dl>
+                    <div class="store_item_button">
+                      <a href="#">詳細を見る</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- ユニット -->
+              <li>
+                <div class="store_item small">
+                  <div class="store_item_image">
+                    <img src="https://placehold.co/320x180" alt="">
+                  </div>
+                  <div class="store_item_text">
+                    <p>施設名</p>
+                    <dl>
+                      <dt>所在地</dt>
+                      <dd>〇〇県〇〇市○○区〇〇 △丁目△-△ □□ビル△階</dd>
+                      <dt>主な用途</dt>
+                      <dd>イベント</dd>
+                      <dt>機材/設備</dt>
+                      <dd>
+                        <span>3Dトラッキング</span>
+                        <span>物販ブース</span>
+                        <span>80人収容</span>
+                      </dd>
+                    </dl>
+                    <div class="store_item_button">
+                      <a href="#">詳細を見る</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- ユニット -->
+              <li>
+                <div class="store_item small">
+                  <div class="store_item_image">
+                    <img src="https://placehold.co/320x180" alt="">
+                  </div>
+                  <div class="store_item_text">
+                    <p>施設名</p>
+                    <dl>
+                      <dt>所在地</dt>
+                      <dd>〇〇県〇〇市○○区〇〇 △丁目△-△ □□ビル△階</dd>
+                      <dt>主な用途</dt>
+                      <dd>イベント</dd>
+                      <dt>機材/設備</dt>
+                      <dd>
+                        <span>3Dトラッキング</span>
+                        <span>物販ブース</span>
+                        <span>80人収容</span>
+                      </dd>
+                    </dl>
+                    <div class="store_item_button">
+                      <a href="#">詳細を見る</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="store_more_button">
+            <button id="store_view_more">もっと見る</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 実績/事業関連 -->
+    <div class="horizontal_content_wrapper">
+      <div class="horizontal_content_inner">
+        <!-- イベント/案件/実績 -->
+        <div class="content left">
+          <div class="content_inner">
+            <div class="content_title">
+              <h2>Works</h2>
+              <span class="h2_sub">イベント/実績情報</span>
+            </div>
+            <div class="content_item works">
+              <div class="works_button_wrapper">
+                <a href="#">
+                  <div class="works_image">
+                    <img src="https://placehold.co/480x270" alt="">
+                  </div>
+                </a>
+                <p class="works_text">
+                  自社が主催しているイベント、共催している案件、持ち込み企画の支援をしていることなどに比重を置いた事業の簡単な紹介。<br>
+                  1～2行、50字程度。
+                </p>
+                <div class="works_button">
+                  <a href="#">もっと見る</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- サポートVTuber/スポンサードVTuber -->
+        <div class="content right">
+          <div class="content_inner">
+            <div class="content_title">
+              <h2>Support</h2>
+              <span class="h2_sub">VTuber支援プログラム</span>
+            </div>
+            <div class="content_item support">
+              <div class="support_button_wrapper">
+                <p class="support_text">
+                  サポートVTuber/スポンサードVTuber、<br>
+                  その他の支援事業について触れる。<br>
+                  2～3行、120字程度。
+                </p>
+                <a href="#">
+                  <div class="support_image_wrapper">
+                    <div class="support_image_hover"><span class="hover_text">view more</span></div>
+                    <div class="support_image">
+                      <img src="https://placehold.co/240x200/fff689/31343c" alt="">
+                      <img src="https://placehold.co/240x200/88beff/31343c" alt="">
+                      <img src="https://placehold.co/240x200/fff689/31343c" alt="">
+                      <img src="https://placehold.co/240x200/88beff/31343c" alt="">
+
+                      <img src="https://placehold.co/240x200/88beff/31343c" alt="">
+                      <img src="https://placehold.co/240x200/fff689/31343c" alt="">
+                      <img src="https://placehold.co/240x200/88beff/31343c" alt="">
+                      <img src="https://placehold.co/240x200/fff689/31343c" alt="">
+
+                      <img src="https://placehold.co/240x200/fff689/31343c" alt="">
+                      <img src="https://placehold.co/240x200/88beff/31343c" alt="">
+                      <img src="https://placehold.co/240x200/fff689/31343c" alt="">
+                      <img src="https://placehold.co/240x200/88beff/31343c" alt="">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 新着情報 -->
+    <div class="content">
+      <div class="content_inner">
+        <div class="content_title">
+          <h2>News</h2>
+          <span class="h2_sub">新着情報</span>
+        </div>
+        <div class="content_item news">
+          <dl>
+            <div class="news_item">
+              <dt>yyyy/mm/dd</dt><dd>新着情報のタイトル</dd>
+            </div>
+            <div class="news_item">
+              <dt>yyyy/mm/dd</dt><dd>新着情報のタイトル</dd>
+            </div>
+            <div class="news_item">
+              <dt>yyyy/mm/dd</dt><dd>新着情報のタイトル</dd>
+            </div>
+            <div class="news_item">
+              <dt>yyyy/mm/dd</dt><dd>新着情報のタイトル</dd>
+            </div>
+            <div class="news_item">
+              <dt>yyyy/mm/dd</dt><dd>新着情報のタイトル</dd>
+            </div>
+            <div class="news_item">
+              <dt>yyyy/mm/dd</dt><dd>新着情報のタイトル</dd>
+            </div>
+            <div class="news_item">
+              <dt>yyyy/mm/dd</dt><dd>新着情報のタイトル</dd>
+            </div>
+            <div class="news_item">
+              <dt>yyyy/mm/dd</dt><dd>新着情報のタイトル</dd>
+            </div>
+            <div class="news_item">
+              <dt>yyyy/mm/dd</dt><dd>新着情報のタイトル</dd>
+            </div>
+            <div class="news_item">
+              <dt>yyyy/mm/dd</dt><dd>新着情報のタイトル</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <!-- お問い合わせ -->
+    <div class="content">
+      <div class="content_inner">
+        <div class="content_title">
+          <h2>Contact</h2>
+          <span class="h2_sub">お問い合わせ</span>
+        </div>
+        <div class="content_item contact">
+          <div class="contact_frm_wrapper">
+            <form method="post" action="◯◯(URL)">
+              <dl>
+                <!-- お問い合わせの種類 -->
+                <dt><label for="category">お問い合わせの種類</label></dt>
+                <dd>
+                  <select id="category" name="category">
+                    <option value="" hidden></option>
+                    <option value="">問合せの種類①</option>
+                    <option value="">問合せの種類②</option>
+                    <option value="">問合せの種類③</option>
+                    <option value="">問合せの種類④</option>
+                  </select>
+                </dd>
+                <!-- 企業名 -->
+                <dt><label for="company">企業名</label></dt>
+                <dd><input type="text"></dd>
+                <!-- ご担当者名 -->
+                <dt><label for="name">ご担当者名</label></dt>
+                <dd><input type="text"></dd>
+                <!-- メールアドレス -->
+                <dt><label for="mail">メールアドレス</label></dt>
+                <dd><input type="text"></dd>
+                <!-- お問い合わせの内容 -->
+                <dt><label for="body">お問い合わせの内容</label></dt>
+                <dd><textarea></textarea></dd>
+              </dl>
+
+              <button class="submit_btn" type="submit" disabled>送信</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- フッター -->
+  <footer>
+    <div class="footer_content_wrapper">
+      <div class="footer_content">
+        <div class="footer_logo">
+          <img src="https://placehold.co/180x180" alt="" />
+        </div>
+        <div class="footer_links map">
+          <ul>
+            <li><a href="#">サイト内リンク</a></li>
+            <li><a href="#">サイト内リンク</a></li>
+            <li><a href="#">サイト内リンク</a></li>
+            <li><a href="#">サイト内リンク</a></li>
+            <li><a href="#">サイト内リンク</a></li>
+            <li><a href="#">サイト内リンク</a></li>
+          </ul>
+        </div>
+        <div class="footer_links sns">
+          <ul>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">X（旧Twitter）</a></li>
+          </ul>
+        </div>
+        <div class="footer_company">
+          <span>© 2024 株式会社LEAFshade</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 <script src="./script/common.js"></script>
+<script>
+  // 施設の表示切替え
+  $('#store_view_more').on('click', () => {
+    // 「partial」クラスの有無を確認
+    if ($('.content_item.store').hasClass('partial')) {
+      // 「partial」クラスを除去
+      $('.content_item.store').toggleClass('partial');
+      // ボタンの文言を変更
+      $('#store_view_more').text('一部を見る');
+    } else {
+      // 「partial」クラスを追加
+      $('.content_item.store').toggleClass('partial');
+      // ボタンの文言を変更
+      $('#store_view_more').text('もっと見る');
+    }
+  });
+
+  $('.support_image_wrapper').hover(
+    function () {
+      console.log(1);
+      // ホバー時のクラスを追加
+      $('.support_image_hover').toggleClass('hov');
+      $('.hover_text').toggleClass('hov');
+      $('.support_image').toggleClass('hov');
+    },
+    function () {
+      console.log(0);
+      // ホバー時のクラスを削除
+      $('.support_image_hover').toggleClass('hov');
+      $('.hover_text').toggleClass('hov');
+      $('.support_image').toggleClass('hov');
+    }
+  );
+</script>
 </html>
