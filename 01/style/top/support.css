@@ -77,3 +77,13 @@
   background: #6ec300;
   color: white;
 }
+
+/* タブレットの場合 */
+@media (max-width: 1220px) {
+
+}
+
+/* スマホの場合 */
+@media (max-width: 720px) {
+
+}

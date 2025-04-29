@@ -39,3 +39,15 @@ footer {
 
   grid-column: 1 / 4;
 }
+
+/* スマホの場合 */
+@media (max-width: 720px) {
+  /* 要素を縦並びに */
+  .footer_content {
+    gap: 12px;
+    grid-template-columns: 1fr;
+  }
+  .footer_company {
+    grid-column: auto;
+  }
+}

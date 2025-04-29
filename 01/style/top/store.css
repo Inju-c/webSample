@@ -37,8 +37,7 @@
 }
 
 /* ユニット（縮小時） 画像 */
-
-.store_item.small .store_item_image img {
+.store_item_image img {
   display: block;
   max-height: 160px;
 }
@@ -72,10 +71,11 @@
   background: var(--c-primal);
   color: white;
   font-size: .9em;
+  display: inline-block;
 }
 
-.store_item.small .store_item_text span:not(:first-child) {
-  margin-left: 4px;
+.store_item.small .store_item_text span:not(:last-child) {
+  margin-right: 4px;
 }
 
 /* ユニット（縮小時） ボタン */
@@ -115,4 +115,45 @@
   font-size: 1.0em;
   text-shadow: 0 0 4px white;
   cursor: pointer;
+}
+
+
+/* タブレットの場合 */
+@media (max-width: 1220px) {
+
+  /* 施設情報の内容を2列縦並びに変更 */
+  .store_item.small {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .store_item.small .store_item_image img {
+    max-height: none;
+    width: 100%;
+  }
+
+  .store_list_wrapper ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 12px;
+  }
+
+  .store_list_wrapper li:not(:first-child) {
+    margin-top: 0;
+  }
+  .store_item.small .store_item_text {
+    padding: 8px 12px;
+  }
+}
+
+/* スマホの場合 */
+@media (max-width: 720px) {
+  /* 1列縦並びに変更 */
+  .store_list_wrapper ul {
+    grid-template-columns: 1fr;
+  }
 }

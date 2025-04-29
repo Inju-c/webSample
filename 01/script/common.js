@@ -14,6 +14,7 @@
     }
   });
 
+  // VTuber支援事業のカバー画像を制御
   $('.support_image_wrapper').hover(
     function () {
       console.log(1);
@@ -30,3 +31,24 @@
       $('.support_image').toggleClass('hov');
     }
   );
+
+  // ピックアップ画像リンクのソースを制御（ロード時）
+  $(window).on('load', function() {
+    // 画面幅が720px以下の時、画像の横幅を狭いものに変更
+    if ($(window).width() < 720) {
+      $('#pu_img_1').attr('src', 'https://placehold.co/680x280');
+      $('#pu_img_2').attr('src', 'https://placehold.co/680x280');
+    }
+  });
+
+  // ピックアップ画像リンクのソースを制御（サイズ変更時）
+  $(window).resize(function(){
+    // 画面幅が720px以下の時、画像の横幅を狭いものに変更
+    if ($(window).width() < 720) {
+      $('#pu_img_1').attr('src', 'https://placehold.co/680x280');
+      $('#pu_img_2').attr('src', 'https://placehold.co/680x280');
+    } else {
+      $('#pu_img_1').attr('src', 'https://placehold.co/1280x280');
+      $('#pu_img_2').attr('src', 'https://placehold.co/1280x280');
+    }
+  });

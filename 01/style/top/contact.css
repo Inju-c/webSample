@@ -69,6 +69,7 @@
   cursor: pointer;
 }
 
+/* タブレットの場合 */
 @media (max-width: 900px) {
   .contact_frm_wrapper {
     width: 70%;
@@ -77,5 +78,16 @@
   .contact_frm_wrapper form dl {
     grid-template-columns: 1fr;
     width: 100%;
+  }
+}
+
+/* スマホの場合 */
+@media (max-width: 720px) {
+  .contact_frm_wrapper {
+    width: 90%;
+    padding: 12px;
+  }
+  .contact_frm_wrapper form dl {
+    gap: 6px;
   }
 }

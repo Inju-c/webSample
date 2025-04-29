@@ -24,3 +24,17 @@
 .news_item:not(:first-child) {
   margin-top: 4px;
 }
+
+.news_item dt {
+  color: gray;
+}
+
+/* スマホの場合 */
+@media (max-width: 720px) {
+  .news_item {
+    display: flex
+;
+        flex-direction: column;
+        gap: 0;
+  }
+}

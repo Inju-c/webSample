@@ -12,6 +12,8 @@
   background: var(--c-primal);
   pointer-events: all;
   transition: .2s;
+  align-items: center;
+  min-height: 76px;
 }
 
 .scroll_header.hide {
@@ -23,6 +25,7 @@
 
 .scroll_header_name {
   font-size: 2.5em;
+  margin-left: 12px;
 }
 
 .scroll_header_name a {
@@ -69,6 +72,20 @@
 .scroll_header_links a:hover::after {
   opacity: 1;
   transform: scaleX(1);
+}
+
+/* ハンバーガーメニュー */
+.scroll_hamburger {
+  width: 72px;
+  background: transparent;
+  border: none;
+  margin: 0 12px;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll_hamburger img {
+  width: 100%;
 }
 
 /* ヘッダー（先頭時のみ表示） */
@@ -204,5 +221,53 @@
 .header_bg_img {
   display: block;
   width: 100%;
-  min-width: 960px;
+}
+
+/* タブレットの場合 */
+@media (max-width: 1220px) {
+
+  /* ナビゲーションを非表示 */
+  .navigation_content.top,
+  .scroll_header_links {
+    display: none;
+  }
+
+  /* ヘッダー部の割合を変更 */
+  .header_content_wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* スクロールヘッダーを常に表示 */
+  .scroll_header.hide {
+    opacity: 1;
+    transform: none;
+    pointer-events: all;
+  }
+
+  /* 画像ヘッダを少し下にずらす */
+  .image_content.top {
+    margin-top: 76px;
+  }
+
+  /* ハンバーガーメニューを表示 */
+  .scroll_hamburger {
+    display: block;
+  }
+}
+
+/* スマホの場合 */
+@media (max-width: 720px) {
+  .scroll_header_name {
+    font-size: 1.8em;
+  }
+  .scroll_header {
+    min-height: 50px;
+  }
+  .image_content.top {
+    margin-top: 50px;
+  }
+
+  .scroll_hamburger {
+    width: 48px;
+  }
 }

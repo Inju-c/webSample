@@ -96,3 +96,57 @@ a {
   color: #6ec300;
   font-size: 1.2em;
 }
+
+/* タブレットの場合 */
+@media (max-width: 1220px) {
+
+  /* 要素の基本的な幅を拡張 */
+  .content_inner {
+    width: 80%;
+  }
+
+  /* コンテンツ名を縦並びに変更 */
+  .content_title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  /* 実績関連を縦並びに変更 */
+  .horizontal_content_inner {
+    width: 85%;
+    grid-template-columns: 1fr;
+  }
+  .content.left,
+  .content.right {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* サポートVTuberの配列を3x3に変更 */
+  .support_image {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .s_i_1-4,
+  .s_i_2-4,
+  .s_i_3-4 {
+    display: none;
+  }
+}
+
+/* スマホの場合 */
+@media (max-width: 720px) {
+  /* サポートVTuberの配列を3x2に変更 */
+  .support_image {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .s_i_1-4,
+  .s_i_2-4,
+  .s_i_3-1,
+  .s_i_3-2,
+  .s_i_3-3,
+  .s_i_3-4 {
+    display: none;
+  }
+}
