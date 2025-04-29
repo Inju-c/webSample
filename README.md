@@ -2,7 +2,7 @@
 
 ## 01
 ### URL
-https://hogefuga
+https://inju-c.github.io/webSample/01/
 
 ### 実装方針
 - 安価で最小限の構成
