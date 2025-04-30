@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>title</title>
+  <title>HOME画面サンプル</title>
+  <!-- 共通スタイル -->
   <link rel="stylesheet" href="./style/common.css">
+  <!-- その他のスタイル -->
+  <link rel="stylesheet" href="./style/top/about.css">
+  <link rel="stylesheet" href="./style/top/store.css">
+  <link rel="stylesheet" href="./style/top/works.css">
+  <link rel="stylesheet" href="./style/top/support.css">
+  <link rel="stylesheet" href="./style/top/pickup.css">
+  <link rel="stylesheet" href="./style/top/news.css">
+  <link rel="stylesheet" href="./style/top/contact.css">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
@@ -14,12 +23,13 @@
   <div class="scroll_header hide">
     <h1 class="scroll_header_name"><a href="#content_top">Company's name</a></h1>
     <ul class="scroll_header_links">
-      <li><a href="#">LINK_1</a></li>
-      <li><a href="#">LINK_2</a></li>
-      <li><a href="#">LINK_3</a></li>
-      <li><a href="#">LINK_4</a></li>
-      <li><a href="#">LINK_5</a></li>
-      <li><a href="#">LINK_6</a></li>
+      <li><a href="#cont_1">LINK_1</a></li>
+      <li><a href="#cont_2">LINK_2</a></li>
+      <li><a href="#cont_3">LINK_3</a></li>
+      <li><a href="#cont_4">LINK_4</a></li>
+      <li><a href="#cont_5">LINK_5</a></li>
+      <li><a href="#cont_6">LINK_6</a></li>
+      <li><a href="#cont_7">LINK_7</a></li>
     </ul>
     <button class="scroll_hamburger">
       <img src="./image/icon_ui_hamburger.png" alt="">
@@ -36,12 +46,13 @@
           <h1 class="header_name">Company's name</h1>
           <!-- クイックアクセス -->
           <ul class="header_quick_links">
-            <li><a href="#">LINK_1</a></li>
-            <li><a href="#">LINK_2</a></li>
-            <li><a href="#">LINK_3</a></li>
-            <li><a href="#">LINK_4</a></li>
-            <li><a href="#">LINK_5</a></li>
-            <li><a href="#">LINK_6</a></li>
+            <li><a href="#cont_1">LINK_1</a></li>
+            <li><a href="#cont_2">LINK_2</a></li>
+            <li><a href="#cont_3">LINK_3</a></li>
+            <li><a href="#cont_4">LINK_4</a></li>
+            <li><a href="#cont_5">LINK_5</a></li>
+            <li><a href="#cont_6">LINK_6</a></li>
+            <li><a href="#cont_7">LINK_7</a></li>
           </ul>
           <!-- SNS -->
           <div class="header_sns_links">
@@ -63,7 +74,7 @@
   <!-- メインコンテンツ -->
   <div class="content_main">
     <!-- 会社概要 -->
-    <div class="content">
+    <div class="content" id="cont_1">
       <div class="content_inner">
         <div class="content_title">
           <h2>About us</h2>
@@ -77,7 +88,7 @@
       </div>
     </div>
     <!-- 施設紹介 -->
-    <div class="content">
+    <div class="content" id="cont_2">
       <div class="content_inner">
         <div class="content_title">
           <h2>Store</h2>
@@ -111,7 +122,7 @@
                       </dd>
                     </dl>
                     <div class="store_item_button">
-                      <a href="#">詳細を見る</a>
+                      <a href="./pages/details/">詳細を見る</a>
                     </div>
                   </div>
                 </div>
@@ -137,7 +148,7 @@
                       </dd>
                     </dl>
                     <div class="store_item_button">
-                      <a href="#">詳細を見る</a>
+                      <a href="./pages/details/">詳細を見る</a>
                     </div>
                   </div>
                 </div>
@@ -163,7 +174,7 @@
                       </dd>
                     </dl>
                     <div class="store_item_button">
-                      <a href="#">詳細を見る</a>
+                      <a href="./pages/details/">詳細を見る</a>
                     </div>
                   </div>
                 </div>
@@ -189,7 +200,7 @@
                       </dd>
                     </dl>
                     <div class="store_item_button">
-                      <a href="#">詳細を見る</a>
+                      <a href="./pages/details/">詳細を見る</a>
                     </div>
                   </div>
                 </div>
@@ -215,7 +226,7 @@
                       </dd>
                     </dl>
                     <div class="store_item_button">
-                      <a href="#">詳細を見る</a>
+                      <a href="./pages/details/">詳細を見る</a>
                     </div>
                   </div>
                 </div>
@@ -232,7 +243,7 @@
     <div class="horizontal_content_wrapper">
       <div class="horizontal_content_inner">
         <!-- イベント/案件/実績 -->
-        <div class="content left">
+        <div class="content left" id="cont_3">
           <div class="content_inner">
             <div class="content_title">
               <h2>Works</h2>
@@ -257,7 +268,7 @@
           </div>
         </div>
         <!-- サポートVTuber/スポンサードVTuber -->
-        <div class="content right">
+        <div class="content right" id="cont_4">
           <div class="content_inner">
             <div class="content_title">
               <h2>Support</h2>
@@ -298,12 +309,12 @@
       </div>
     </div>
     <!-- Pick up -->
-    <div class="content">
+    <div class="content" id="cont_5">
       <div class="content_inner">
-        <div class="content_title">
+        <!--<div class="content_title">
           <h2>pickup</h2>
           <span class="h2_sub">おすすめ</span>
-        </div>
+        </div>-->
         <div class="content_item pickup">
           <div class="pickup_item">
             <img id="pu_img_1" src="https://placehold.co/1280x280" alt="">
@@ -315,7 +326,7 @@
       </div>
     </div>
     <!-- 新着情報 -->
-    <div class="content">
+    <div class="content" id="cont_6">
       <div class="content_inner">
         <div class="content_title">
           <h2>News</h2>
@@ -358,7 +369,7 @@
       </div>
     </div>
     <!-- お問い合わせ -->
-    <div class="content">
+    <div class="content" id="cont_7">
       <div class="content_inner">
         <div class="content_title">
           <h2>Contact</h2>
@@ -431,20 +442,5 @@
   </footer>
 </body>
 
-<script src="./script/common.js"></script>
-<script>
-  // ヘッダーの表示非表示を切り替え
-  $(window).on('scroll', function() {
-    // 画面幅が1200px以上の時だけ有効
-    if ($(window).width() > 1200) {
-      if ($(window).scrollTop() > 800) {
-        $('.scroll_header').removeClass('hide');
-      } else {
-        $('.scroll_header').addClass('hide');
-      }
-    } else {
-      $('.scroll_header').removeClass('hide');
-    }
-  });
-</script>
+<script src="./script/top/common.js"></script>
 </html>

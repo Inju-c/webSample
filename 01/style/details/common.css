@@ -1,0 +1,81 @@
+/*******************************/
+/*      ヘッドコンテンツ       */
+/*******************************/
+.details_content {
+  width: 80%;
+  max-width: 900px;
+  margin: 24px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.d_head_back {}
+
+.d_head_back a {
+  color: gray;
+}
+
+.d_head_back a::before {
+  content: "←";
+  margin-right: 8px;
+}
+
+.d_head_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d_head_wrapper span {
+  font-size: 1.5em;
+}
+
+.d_head_wrapper .details_type {
+  background: gray;
+  color: white;
+  padding: 0 24px;
+  border-radius: 24px;
+}
+
+.d_head_wrapper .details_date {
+  color: gray;
+}
+
+.details_content h1 {
+  margin: 12px 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  overflow-wrap: break-word;
+}
+
+.details_content h2 {
+  margin: 12px 0;
+  font-size: 2em;
+  overflow-wrap: break-word;
+  border: solid 2px var(--c-primal);
+  padding: 12px 18px;
+}
+
+.details_content img {
+  width: 60%;
+  margin: 12px auto;
+}
+
+.details_content a,
+.details_content p {
+  font-size: 1.2em;
+  margin: 4px 0;
+}
+
+.details_content a {
+  color: blue;
+}
+
+.details_content .details_thumbnail {
+  display: block;
+  width: 100%;
+}

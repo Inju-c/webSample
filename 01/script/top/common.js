@@ -40,7 +40,6 @@
       $('#pu_img_2').attr('src', 'https://placehold.co/680x280');
     }
   });
-
   // ピックアップ画像リンクのソースを制御（サイズ変更時）
   $(window).resize(function(){
     // 画面幅が720px以下の時、画像の横幅を狭いものに変更
@@ -50,5 +49,19 @@
     } else {
       $('#pu_img_1').attr('src', 'https://placehold.co/1280x280');
       $('#pu_img_2').attr('src', 'https://placehold.co/1280x280');
+    }
+  });
+
+  // ヘッダーの表示非表示を切り替え
+  $(window).on('scroll', function() {
+    // 画面幅が1200px以上の時だけ有効
+    if ($(window).width() > 1200) {
+      if ($(window).scrollTop() > 800) {
+        $('.scroll_header').removeClass('hide');
+      } else {
+        $('.scroll_header').addClass('hide');
+      }
+    } else {
+      $('.scroll_header').removeClass('hide');
     }
   });

@@ -1,11 +1,4 @@
 @import url(./header.css);
-@import url(./top/about.css);
-@import url(./top/store.css);
-@import url(./top/works.css);
-@import url(./top/support.css);
-@import url(./top/pickup.css);
-@import url(./top/news.css);
-@import url(./top/contact.css);
 @import url(./footer.css);
 
 /* 固有色の設定 */
@@ -30,6 +23,10 @@ a {
   flex-wrap: wrap;
   margin: 36px 0;
   gap: 36px;
+}
+
+.content_main.details{
+  margin-top: 76px;
 }
 
 .horizontal_content_wrapper {
